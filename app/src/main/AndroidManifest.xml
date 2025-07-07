@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Jlaja"
+        tools:targetApi="31">
+        <activity
+            android:name=".GeminiChatbot"
+            android:exported="true"
+            android:label="@string/title_activity_gemini_chatbot"
+            android:theme="@style/Theme.Jlaja">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SplitBillPage"
+            android:exported="false" />
+        <activity
+            android:name=".AddBillActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BillsAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".ItemsAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".MemberDetailsAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".MembersAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".SplitBillMain"
+            android:exported="false" />
+        <activity
+            android:name=".TripDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SecondTimeUserHome"
+            android:exported="false" />
+        <activity
+            android:name=".FirstTimeUserHome"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpPage"
+            android:exported="false" />
+        <activity
+            android:name=".LoginPage"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen2"
+            android:exported="false" />
+        <activity
+            android:name=".UserAuth"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".ChatActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".SearchUserActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ChatRoom"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".checklist2"
+            android:exported="false"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
