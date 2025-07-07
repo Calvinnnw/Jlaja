@@ -59,7 +59,7 @@ Meet the team behind Jlaja! Each of us brought unique skills and ideas to the ta
 ### Setup Instructions
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Sam-Gunawan/Jlaja
+   git clone https://github.com/Calvinnnw/Jlaja
    ```
 2. Open the project in Android Studio.
 3. Sync the Gradle files.
